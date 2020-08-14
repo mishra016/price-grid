@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body{
+  background-color: hsl(204, 43%, 93%);
+  font-family: "karla";
+  font-size: 16px;
+}
+
+.container{
+  margin: 100px;
+  justify-content: center;
+}
+
+
+.one{
+  padding: 50px;
+  background-color: white;
+  color:  hsl(218, 22%, 67%);
+  margin-top: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.row{
+  border: none;
+  line-height: 25px;
+}
+
+
+h2{
+  color: hsl(179, 62%, 43%);
+  line-height: 80px;
+}
+
+h3{
+  color: hsl(71, 73%, 54%);
+  line-height: 40px;
+}
+
+h4{
+  line-height: 40px;
+}
+
+.column {
+  color: white;
+}
+
+
+.dark{
+  padding: 50px;
+  line-height: 35px;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.bold{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+button{
+  background-color:  hsl(71, 73%, 54%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 75%;
+  height: 18%;
+  padding: 10px 20px 10px 20px;
+}
+
+.light{
+  padding: 50px;
+  background-color:hsl(179, 43%, 62%);
+  line-height: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer{
+  padding-top: 40px;
+  margin-left: 10%;
+  grid-row: 3/4;
+}
+
+a {
+  text-align: center;
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 710px) {
+
+  .container{
+    margin: 0;
+    display: flex;
+
+  }
+
+  .m {
+      display: grid;
+      grid-gap: 0;
+      justify-content: center;
+    }
+
+    .one {
+     padding-left: 40px;
+     grid-row: 1/2;
+     }
+
+      .one p{
+       width: 550px
+     }
+
+     .two{
+       display: flex;
+     }
+
+    .dark {
+      padding: 40px;
+        grid-row: 2/3;
+        border-bottom-left-radius: 10px;
+
+    }
+
+    button{
+      width: 60%;
+      height: 15%;
+    }
+
+    .light {
+      padding: 40px;
+      grid-row: 3/4;
+      border-bottom-left-radius: 0;
+    }
+
+    .column{
+     width: 350px;
+    }
+
+    footer {
+      margin-left: 30%;
+       grid-row: 5/6;
+    }
+
+}
